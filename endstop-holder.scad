@@ -1,5 +1,3 @@
-//color("Gainsboro") import("/Users/Gravity/Downloads/Mechanical_Endstop_v12/mechanical-endstop.dxf");
-
 thickness = 1.5;
 
 module board(posts) {
@@ -57,5 +55,4 @@ module pin(){
 	}
 }
 
-//color("blue")
-board(true);
+board(false);
