@@ -1,3 +1,5 @@
+//0.3 layer height recommended
+
 thickness = 1.5;
 
 module board(posts) {
