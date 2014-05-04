@@ -1,17 +1,17 @@
 thickness = 1.6;
 
+es_offset = 3; //0 for Maker style, 3 for top aligned
+
 module board() {
-		difference(){
+	difference(){
 		translate([0,0,-thickness/2])	
 			cube([39.5,16,thickness]);
 		translate([2.3,2.55,0])
 			cylinder(r=1.5, h=thickness+1, center=true, $fn=24);
 		translate([2.3,13.45,0])
 			cylinder(r=1.5, h=thickness+1, center=true, $fn=24);
-		if(!posts){
-			translate([16.6,7.5,thickness/2])
-				endstop();
-		}
+		translate([16.6+es_offset,7.5,thickness/2])
+			endstop();
 	}
 }
 
